@@ -43,14 +43,28 @@
             margin: 0 auto;
         }
 
+        .py-20 {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
+
+        @media (max-width: 640px) {
+            .py-20 {
+                padding-top: 3rem;
+                padding-bottom: 3rem;
+            }
+        }
+
         .px-6 {
             padding-left: 1.5rem;
             padding-right: 1.5rem;
         }
 
-        .py-20 {
-            padding-top: 5rem;
-            padding-bottom: 5rem;
+        @media (max-width: 640px) {
+            .px-6 {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
         }
 
         .bg-gray-50 {
@@ -81,16 +95,40 @@
             gap: 2rem;
         }
 
+        @media (max-width: 640px) {
+            .gap-8 {
+                gap: 1rem;
+            }
+        }
+
         .gap-12 {
             gap: 3rem;
         }
 
+        @media (max-width: 640px) {
+            .gap-12 {
+                gap: 1.5rem;
+            }
+        }
+
         .md\:grid-cols-2 {
-            grid-template-columns: repeat(2, minmax(0, 1fr));
+            grid-template-columns: 1fr;
+        }
+
+        @media (min-width: 768px) {
+            .md\:grid-cols-2 {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
         }
 
         .md\:grid-cols-3 {
-            grid-template-columns: repeat(3, minmax(0, 1fr));
+            grid-template-columns: 1fr;
+        }
+
+        @media (min-width: 768px) {
+            .md\:grid-cols-3 {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+            }
         }
 
         .md\:flex {
@@ -504,6 +542,12 @@
             transition: all 0.2s;
         }
 
+        @media (max-width: 640px) {
+            .product-card {
+                padding: 1.5rem;
+            }
+        }
+
         .product-card:hover {
             border-color: rgba(30, 58, 138, 0.3);
             box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
@@ -514,15 +558,33 @@
             margin-bottom: 1rem;
         }
 
+        @media (max-width: 640px) {
+            .product-icon {
+                font-size: 2.5rem;
+            }
+        }
+
         .product-card h3 {
             font-size: 1.5rem;
             font-weight: bold;
             margin-bottom: 0.5rem;
         }
 
+        @media (max-width: 640px) {
+            .product-card h3 {
+                font-size: 1.25rem;
+            }
+        }
+
         .product-card p {
             color: #4b5563;
             margin-bottom: 1.5rem;
+        }
+
+        @media (max-width: 640px) {
+            .product-card p {
+                font-size: 0.95rem;
+            }
         }
 
         .feature-list {
@@ -564,6 +626,12 @@
             transition: background 0.2s;
         }
 
+        @media (max-width: 640px) {
+            .app-card {
+                padding: 1.5rem;
+            }
+        }
+
         .app-card:hover {
             background: #1e3a8a;
         }
@@ -573,15 +641,34 @@
             margin-bottom: 0.75rem;
         }
 
+        @media (max-width: 640px) {
+            .app-icon {
+                font-size: 1.75rem;
+            }
+        }
+
         .app-card h3 {
             font-size: 1.25rem;
             font-weight: bold;
             margin-bottom: 0.75rem;
         }
 
+        @media (max-width: 640px) {
+            .app-card h3 {
+                font-size: 1.1rem;
+            }
+        }
+
         .app-card p {
             font-size: 0.875rem;
             color: #d1d5db;
+        }
+
+        @media (max-width: 640px) {
+            .app-card p {
+                font-size: 0.8rem;
+                line-height: 1.5;
+            }
         }
 
         /* About Section */
@@ -863,7 +950,7 @@
         <div class="max-w-7xl mx-auto w-full">
             <div class="hero-content">
                 <div class="hero-text">
-                    <h1>Standard Series<span class="gradient-text"> for Radiator Cooling</span></h1>
+                    <h1>Axial Fans<span class="gradient-text"> for Radiator Cooling</span></h1>
                     <p>Proven cooling solutions for diverse radiator applications</p>
                     <div class="button-group">
                         <button onclick="scrollToSection('products')" class="btn-primary">View Products →</button>
